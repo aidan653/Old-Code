@@ -1,0 +1,7 @@
+﻿  FileSystem.cpp
+C:\Users\aidan\source\repos\Database\File system\File system\Header\FileSystem.cpp(11,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Tree.cpp
+  TreeList.cpp
+  main.cpp
+  Generating Code...
+  File system.vcxproj -> C:\Users\aidan\source\repos\Database\File system\x64\Debug\File system.exe
