@@ -1,3 +1,3 @@
 Uses a tree where each layer is a linked list which maintains it's structure by using a lag variable within the list. Extensive commenting added.
 
-Functions Contained in file system.cpp for future reference:
+Functions Contained in file system.cpp(which is in the header folder for some reason) for future reference:
