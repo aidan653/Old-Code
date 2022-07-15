@@ -12,9 +12,9 @@ void clear() {
 bool choiceCheck(char choice) {
 	if (choice == 'p')
 		choice = 'P';
-	if (choice == 'c')
+	else if (choice == 'c')
 		choice = 'C';
-	if (choice == 'q')
+	else if (choice == 'q')
 		choice = 'Q';
 	switch (choice) {
 		case '=':
