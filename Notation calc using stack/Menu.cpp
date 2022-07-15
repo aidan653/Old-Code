@@ -9,14 +9,14 @@ void clear() {
 	cout << "\x1B[2J\x1B[H";
 }
 
-bool choiceCheck(char choice) {
-	if (choice == 'p')
-		choice = 'P';
-	else if (choice == 'c')
-		choice = 'C';
-	else if (choice == 'q')
-		choice = 'Q';
-	switch (choice) {
+bool choiceCheck(char* choice) {
+	if (*choice == 'p')
+		*choice = 'P';
+	else if (*choice == 'c')
+		*choice = 'C';
+	else if (*choice == 'q')
+		*choice = 'Q';
+	switch (*choice) {
 		case '=':
 			return true;
 		case '+':
@@ -42,7 +42,7 @@ void Menu::prompt() {
 	char temp = 4;
 	char* choice = &temp;
 	string chupapi;
-	while (!choiceCheck(*choice)) { //Keeps repeating menu until user enters a listed option
+	while (!choiceCheck(choice)) { //Keeps repeating menu until user enters a listed option
 		clear();
 		cout << "Would you like to: " << endl;
 		cout << "= ... Add new number to the stack" << endl;
@@ -56,12 +56,6 @@ void Menu::prompt() {
 		cin >> chupapi;
 		choice = &chupapi.at(0);
 	}
-	if (*choice == 'p')
-		*choice = 'P';
-	if (*choice == 'c')
-		*choice = 'C';
-	if (*choice == 'q')
-		*choice = 'Q';
 	switch (*choice) { //Switch case to execute different functions that correspond with choices 
 	case '=':
 		newNum();
