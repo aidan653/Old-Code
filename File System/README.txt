@@ -28,3 +28,17 @@ Functions Contained in 𝐅𝐢𝐥𝐞𝐒𝐲𝐬𝐭𝐞𝐦.𝐜𝐩𝐩(whi
   o	if first is last return true
 •	goTo() – overload for either a node or string as an argument
   o	Traverses list to look for argument while not at the end, then does final check when at end, and if it never returns true, return false.
+
+𝐓𝐫𝐞𝐞.𝐜𝐩𝐩
+•	addDir()
+  o	Makes a new tree list or adds a node onto an list if it already exists
+•	displayChildren()
+  o	while the list isn’t at the end it displays the contents of the list using getCurrentName from tree list
+•	deleteCurrx()
+  o	Just look at the code for notes
+•	cd(string dirName)
+  o	Sets current level as the specified arg. Has a lag variable to set to a child’s parent.
+•	goUp()
+  o	Just moves current to current’s parent
+•	doesExist(string dirName)
+  o	Uses treeLists go to function and that’s really it
